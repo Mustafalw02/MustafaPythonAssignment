@@ -1,0 +1,28 @@
+Question 2
+
+a)  a = 4, b = 2, x = 5, y = 4
+     result = 5 * b * b * x - 3 * a * y * y - 8 * b * b * x + 10 * a * y
+	Subtitute the values of a, b, x, y
+     result = 5 * 2 * 2 * 5 - 3 * 4 * 4 * 4 - 8 * 2 * 2 * 5 + 10 * 4 * 4
+     result = (5 * 2 * 2 * 5) - (3 * 4 * 4 * 4) - (8 * 2 * 2 * 5) + (10 * 4 * 4)
+	Associativity left to right
+     result = 100 - 192 - 160 + 160 = -92 -160 + 160 = -252 + 160
+     result = -92
+
+b)  a = 3, y = 3, c = 7
+     calc = 4 * a * y / c - a * y / c
+	Subtitute the values of a, y, c
+    calc = (4 * 3 * 3 / 7) - (3 * 3 / 7)
+	Associativity left to right
+    calc = (12 * 3 / 7) - (9 / 7)
+    calc = (36 / 7) - (1.285714285.....)
+    calc = (5.14285714......) - (1.285714285.....)
+    calc = 3.857142......
+
+c)  a = 4.4, b = 0.0, c = 4.2, y = 3.0
+     ans = c + a * y * y / b
+ 	Associativity left to right
+     ans = 4.2 + (4.4 * 3.0 * 3.0 / 0.0)
+     ans = 4.2 + (39.6 / 0.0)
+	ArithematicError  Can't divide by zero
+Edit:- ZeroDivisionError: float division by zero
