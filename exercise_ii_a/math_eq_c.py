@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+#Question 4 (c)
 x = int(input('x = '))
 y = int(input('y = '))
 

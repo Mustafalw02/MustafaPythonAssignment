@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
-
+#Taking Input
 x = input('Enter a five digit number: ')
 sum = 0
+
+#Calculating Reverse
 d = int(x[0])
 d = d+1 if d<9 else 0
 sum += d * 10**4
