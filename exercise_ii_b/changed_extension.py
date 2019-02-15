@@ -11,4 +11,4 @@ word = word.split('/')
 word = word[-1].split('.')
 
 #Printing Extension
-print("Extension is:", word[0] + ext)
+print("Extension is:", word[0] + '.' + ext)
