@@ -12,27 +12,28 @@ rollNo = input('Please Enter the Roll Number: ')
 courseName =  input('Please Enter the Course Name: ')
 
 #Taking Marks
-sub1 = int(input("Marks in Mathematics-III: "))
-sub2 = int(input("Marks in Analysis Design of Algorithms: "))
-sub3 = int(input("Marks in Software Engineering: "))
-sub4 = int(input("Marks in Computer Org. & Architecture: "))
-sub5 = int(input("Marks in Operating Systems: "))
+sub = input('Please Enter Subject Names seprated by commas: ').split(',')
+subCode = input('Please Enter Sibject Code seprated by commas: ').split(',')
+sub1 = int(input("Marks in " + sub[0] + ":"))
+sub2 = int(input("Marks in " + sub[1] + ":"))
+sub3 = int(input("Marks in " + sub[2] + ":"))
+sub4 = int(input("Marks in " + sub[3] + ":"))
+sub5 = int(input("Marks in " + sub[4] + ":"))
 
 #Calculating total and %
 totalMarks = sub1 + sub2 + sub3 + sub4 + sub5
-percentage = (totalMarks/450) * 100
+percentage = totalMarks/5
 
 #Printing Marksheet
 print()
 print('|' + '-'*78 + '|')
 print('|' + '*'*35 + 'MARKSHEET' + '*'*34 + '|')
 print('|' + '-'*78 + '|')
-
+print('|{:^78}|'.format('ACROPOLIS INSTITUTE OF TECHNOLOGY AND RESEARCH, INDORE'))
+print('|' + '-'*78 + '|')
 #Printing Details
-print('''|{:<17}{:<61}|   
-|{:<17}{:<61}|
-|{:<17}{:<61}|
-|{:<17}{:<61}|'''
+print('''|{:<17}{:<25}{:<17}{:<19}|
+|{:<17}{:<25}{:<17}{:<19}|'''
 .format("Student's Name: ",studentName,"Father's Name: ",fatherName,
         "Roll Number: ",rollNo,"Course Name:",courseName ))
 
@@ -52,11 +53,11 @@ print('''| |{:^7}|{:^14}|{:<34}|{:^16}| |
 | |                                             Percentage:  {:^16}| |
 | |                                             Result:      {:^16}| |
 | |--------------------------------------------------------------------------| |'''
-.format("1.","BT401","Mathematics-III",sub1,
-        "2.","CS402","Analysis Design Of Algorithm",sub2,
-        "3.","CS403","Software Engineering",sub3,
-        "4.","CS404","Computer Org. & Architecture",sub4,
-        "5.","CS405","Operating Systems",sub5,
+.format("1.",subCode[0],sub[0],sub1,
+        "2.",subCode[1],sub[1],sub2,
+        "3.",subCode[2],sub[2],sub3,
+        "4.",subCode[3],sub[3],sub4,
+        "5.",subCode[4],sub[4],sub5,
         totalMarks, percentage, "PASS"))
 print('|' + ' '*78 + '|')
 print('|' + '-'*78 + '|')
